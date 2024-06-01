@@ -1,30 +1,62 @@
+// src/components/Navbar/style.tsx
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+interface NavLinksProps {
+  isOpen: boolean;
+}
+
 export const NavbarContainer = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
   width: 100vw;
-  border: 2px solid #fff;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1000;
 `;
 
-export const NavLinks = styled.div`
+export const NavLinks = styled.div<NavLinksProps>`
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+  justify-content: center;
+  align-items: center;
 `;
 
 export const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.5vw;
-  color: white;
+  color: #000000;
   text-decoration: none;
   font-size: 1.6rem;
-  padding: 0.75rem 1.5rem; /* Aumenta o padding para melhorar a área de clique */
+  padding: 0.75rem 1.5rem;
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const MenuToggle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px 5%;
+
+  cursor: pointer;
+`;
+
+export const MenuIcon = styled.span`
+  font-size: 2rem;
 `;

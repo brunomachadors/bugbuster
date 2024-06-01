@@ -1,18 +1,34 @@
-import { NavLinks, NavbarContainer, StyledLink } from './style';
-import logo from '../../assets/bug.svg';
+// src/components/Navbar/index.tsx
+import React, { useState } from 'react';
+import {
+  NavLinks,
+  NavbarContainer,
+  StyledLink,
+  MenuToggle,
+  MenuIcon,
+} from './style';
+import Logo from '../Logo/Logo';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <NavbarContainer>
-      <NavLinks>
-        <StyledLink to="/bugbuster">
-          <img src={logo} width={'35px'} alt="Bug Buster Logo" />
-          BUG BUSTER
+      <MenuToggle>
+        <MenuIcon className="material-icons" onClick={toggleMenu}>
+          menu
+        </MenuIcon>
+        <StyledLink to="/">BUG BUSTER</StyledLink>
+        <Logo></Logo>
+      </MenuToggle>
+      <NavLinks isOpen={isOpen}>
+        <StyledLink to="/mentors" onClick={toggleMenu}>
+          NOSSOS MENTORES
         </StyledLink>
-        <StyledLink to="/contact">MENTORIA</StyledLink>
-        <StyledLink to="/contact">STACKS</StyledLink>
-        <StyledLink to="/about">NOSSOS MENTORES</StyledLink>
-        <StyledLink to="/about">DEPOIMENTOS</StyledLink>
       </NavLinks>
     </NavbarContainer>
   );
