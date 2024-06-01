@@ -7,10 +7,10 @@ import Mentors from './pages/Mentors';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/bugbuster">
       <Navbar></Navbar>
       <Routes>
-        <Route path="/bugbuster" element={<Home></Home>} />
+        <Route path="/" element={<Home></Home>} />
         <Route path="/mentors" element={<Mentors></Mentors>} />
       </Routes>
       <Footer></Footer>

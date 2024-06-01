@@ -22,8 +22,11 @@ const Navbar: React.FC = () => {
         <MenuIcon className="material-icons" onClick={toggleMenu}>
           menu
         </MenuIcon>
-        <StyledLink to="/bugbuster">BUG BUSTER</StyledLink>
-        <Logo></Logo>
+
+        <StyledLink to="/" onClick={toggleMenu}>
+          BUG BUSTER
+        </StyledLink>
+        <Logo />
       </MenuToggle>
       <NavLinks isOpen={isOpen}>
         <StyledLink to="/mentors" onClick={toggleMenu}>
