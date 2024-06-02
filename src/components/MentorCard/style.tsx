@@ -57,10 +57,11 @@ export const ListContainer = styled.ul`
 export const ListTitle = styled.p`
   font-weight: bold;
   margin-bottom: 1px;
+  font-size: larger;
 `;
 
 export const ListItem = styled.li`
-  font-size: 0.9em;
+  font-size: medium;
   color: #333;
   display: flex;
   justify-content: center;

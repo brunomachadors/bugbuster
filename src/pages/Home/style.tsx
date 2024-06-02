@@ -8,6 +8,7 @@ export const HomeContainer = styled.div`
   width: 100%;
   flex-direction: column;
   margin-top: 2vh;
+  margin-bottom: 5vh;
   gap: 3vh;
 `;
 
