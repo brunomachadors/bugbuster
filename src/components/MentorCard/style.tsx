@@ -7,6 +7,7 @@ export const MentorsContainer = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 8vh;
 `;
 
 export const MentorContainer = styled.div`
@@ -16,7 +17,7 @@ export const MentorContainer = styled.div`
   border-radius: 8px;
   margin-top: 1vh;
   padding-bottom: 1vh;
-  margin-bottom: 2vh;
+
   border-bottom: 3px dashed #00000073;
   width: 60%;
 `;
