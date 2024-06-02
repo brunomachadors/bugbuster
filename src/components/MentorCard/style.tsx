@@ -7,7 +7,6 @@ export const MentorsContainer = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 2vh;
 `;
 
 export const MentorContainer = styled.div`
@@ -15,7 +14,11 @@ export const MentorContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-  padding: 2vh;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  border-bottom: 3px dashed #00000073;
+  width: 60%;
 `;
 
 export const MentorImage = styled.img`
@@ -26,7 +29,6 @@ export const MentorImage = styled.img`
 `;
 
 export const MentorInfo = styled.div`
-  margin-top: 20px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -35,7 +37,7 @@ export const MentorInfo = styled.div`
 
 export const MentorName = styled.h3`
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 `;
 
 export const MentorDescription = styled.p`
@@ -53,14 +55,12 @@ export const ListContainer = styled.ul`
 
 export const ListTitle = styled.p`
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 `;
 
 export const ListItem = styled.li`
   font-size: 0.9em;
   color: #333;
-  margin-top: 5px;
   display: flex;
   justify-content: center;
 `;

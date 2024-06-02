@@ -1,3 +1,4 @@
+import HomeIntroSection from '../../components/Intro';
 import {
   BlockContainer,
   Description,
@@ -11,6 +12,8 @@ import {
 const Home = () => {
   return (
     <HomeContainer id="homeContainer">
+      <HomeIntroSection></HomeIntroSection>
+
       <BlockContainer id="blockContainer1">
         <TitleContainer>
           <MaterialIcon iconName="work" size="5vh" />

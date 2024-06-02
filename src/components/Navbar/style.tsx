@@ -11,7 +11,7 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 1rem 0 0;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +32,15 @@ export const NavLinks = styled.div<NavLinksProps>`
   max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    position: static;
+    max-height: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -53,8 +62,11 @@ export const MenuToggle = styled.div`
   align-items: center;
   width: 100%;
   margin: 0px 5%;
-
   cursor: pointer;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
 
 export const MenuIcon = styled.span`
