@@ -151,6 +151,7 @@ Error generating stack: `+i.message+`
   width: 100%;
   flex-direction: column;
   margin-top: 2vh;
+  margin-bottom: 5vh;
   gap: 3vh;
 `,uo=F.div`
   border-bottom: 3px dashed #00000073;
@@ -271,8 +272,9 @@ Error generating stack: `+i.message+`
 `,mo=F.p`
   font-weight: bold;
   margin-bottom: 1px;
+  font-size: larger;
 `,vo=F.li`
-  font-size: 0.9em;
+  font-size: medium;
   color: #333;
   display: flex;
   justify-content: center;
