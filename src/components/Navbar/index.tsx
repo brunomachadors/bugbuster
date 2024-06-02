@@ -1,5 +1,5 @@
 // src/components/Navbar/index.tsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   NavLinks,
   NavbarContainer,
@@ -8,12 +8,25 @@ import {
   MenuIcon,
 } from './style';
 import Logo from '../Logo/Logo';
+import useWindowWidth from '../../hooks/useWindowWidth';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const width = useWindowWidth();
+
+  useEffect(() => {
+    if (width > 768) {
+      // 768px é uma largura comum para determinar a transição entre mobile e desktop
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  }, [width]);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (width <= 768) {
+      setIsOpen(!isOpen);
+    }
   };
 
   return (
@@ -22,15 +35,14 @@ const Navbar: React.FC = () => {
         <MenuIcon className="material-icons" onClick={toggleMenu}>
           menu
         </MenuIcon>
-
-        <StyledLink to="/" onClick={toggleMenu}>
-          BUG BUSTER
-        </StyledLink>
         <Logo />
       </MenuToggle>
       <NavLinks isOpen={isOpen}>
+        <StyledLink to="/" onClick={toggleMenu}>
+          BUG BUSTER
+        </StyledLink>
         <StyledLink to="/mentors" onClick={toggleMenu}>
-          NOSSOS MENTORES
+          QUEM SOMOS
         </StyledLink>
       </NavLinks>
     </NavbarContainer>
