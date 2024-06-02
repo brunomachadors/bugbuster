@@ -235,6 +235,7 @@ Error generating stack: `+i.message+`
   align-items: center;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 8vh;
 `,Q1=F.div`
   display: flex;
   flex-direction: column;
@@ -242,7 +243,7 @@ Error generating stack: `+i.message+`
   border-radius: 8px;
   margin-top: 1vh;
   padding-bottom: 1vh;
-  margin-bottom: 2vh;
+
   border-bottom: 3px dashed #00000073;
   width: 60%;
 `,K1=F.img`
