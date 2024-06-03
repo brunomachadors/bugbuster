@@ -8,6 +8,7 @@ const IntroContainer = styled.div`
   flex-direction: column;
   margin-bottom: 2rem;
   border: 1px dotted black;
+  border-radius: 20px;
   width: 80%;
 `;
 
@@ -19,13 +20,13 @@ const TitleContainer = styled.div`
 `;
 
 const IntroTitle = styled.h1`
-  font-size: 2.4em;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 1rem;
 `;
 
 const IntroDescription = styled.p`
-  font-size: 1.5em;
+  font-size: large;
   text-align: center;
   width: 90%;
 `;

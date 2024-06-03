@@ -16,9 +16,10 @@ export const MentorContainer = styled.div`
   align-items: center;
   border-radius: 8px;
   margin-top: 1vh;
-  padding-bottom: 1vh;
-
+  padding: 2vh;
+  border-top: 3px dashed #00000073;
   border-bottom: 3px dashed #00000073;
+  border-radius: 10%;
   width: 60%;
 `;
 

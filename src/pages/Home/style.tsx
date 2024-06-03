@@ -8,14 +8,14 @@ export const HomeContainer = styled.div`
   width: 100%;
   flex-direction: column;
   margin-top: 2vh;
-  margin-bottom: 5vh;
+  padding-bottom: 1%;
   gap: 3vh;
 `;
 
 export const BlockContainer = styled.div`
   border-bottom: 3px dashed #00000073;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  border-top: 3px dashed #00000073;
+  border-radius: 10%;
   padding: 1.5rem;
   display: flex;
   align-items: center;

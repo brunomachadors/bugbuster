@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  padding: 1rem 0 0;
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,5 +15,5 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterText = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 `;
