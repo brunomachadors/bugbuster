@@ -129,6 +129,7 @@ Error generating stack: `+i.message+`
   flex-direction: column;
   margin-bottom: 2rem;
   border: 1px dotted black;
+  border-radius: 20px;
   width: 80%;
 `,I1=F.div`
   display: flex;
@@ -136,11 +137,11 @@ Error generating stack: `+i.message+`
   align-items: center;
   justify-content: center;
 `,M1=F.h1`
-  font-size: 2.4em;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 1rem;
 `,D1=F.p`
-  font-size: 1.5em;
+  font-size: large;
   text-align: center;
   width: 90%;
 `,F1=()=>R.jsxs(O1,{children:[R.jsxs(I1,{children:[R.jsx(Xd,{}),R.jsx(M1,{children:"BUG BUSTER"})]}),R.jsx(D1,{children:"Somos uma página especializada em serviços de mentoria para profissionais em transição de carreira ou buscando aprimoramento na área de teste de software. Nosso objetivo é fornecer orientação personalizada para ajudá-lo a alcançar seus objetivos profissionais."})]}),U1=F.div`
@@ -151,12 +152,12 @@ Error generating stack: `+i.message+`
   width: 100%;
   flex-direction: column;
   margin-top: 2vh;
-  margin-bottom: 5vh;
+  padding-bottom: 1%;
   gap: 3vh;
 `,uo=F.div`
   border-bottom: 3px dashed #00000073;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  border-top: 3px dashed #00000073;
+  border-radius: 10%;
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -220,7 +221,7 @@ Error generating stack: `+i.message+`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  padding: 1rem 0 0;
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -228,8 +229,8 @@ Error generating stack: `+i.message+`
   background-color: #000000;
   z-index: 1000;
 `,V1=F.p`
-  font-size: 0.8rem;
-`,W1=()=>R.jsx(B1,{children:R.jsxs(V1,{children:["© ",new Date().getFullYear()," Bug Buster Mentoria. Todos os direitos reservados."]})}),H1=F.div`
+  font-size: 0.5rem;
+`,W1=()=>R.jsx(B1,{children:R.jsxs(V1,{children:["© ",new Date().getFullYear()," Bug Buster Mentoria."]})}),H1=F.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -243,9 +244,10 @@ Error generating stack: `+i.message+`
   align-items: center;
   border-radius: 8px;
   margin-top: 1vh;
-  padding-bottom: 1vh;
-
+  padding: 2vh;
+  border-top: 3px dashed #00000073;
   border-bottom: 3px dashed #00000073;
+  border-radius: 10%;
   width: 60%;
 `,K1=F.img`
   width: 150px;
