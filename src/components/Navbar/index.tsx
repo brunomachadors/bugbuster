@@ -41,6 +41,9 @@ const Navbar: React.FC = () => {
         <StyledLink to="/" onClick={toggleMenu}>
           BUG BUSTER
         </StyledLink>
+        <StyledLink to="/ourservices" onClick={toggleMenu}>
+          SERVIÇOS
+        </StyledLink>
         <StyledLink to="/mentors" onClick={toggleMenu}>
           QUEM SOMOS
         </StyledLink>
