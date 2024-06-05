@@ -15,7 +15,7 @@ export const MentorContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-  margin-top: 1vh;
+  margin-top: 2vh;
   padding: 2vh;
   border-top: 3px dashed #00000073;
   border-bottom: 3px dashed #00000073;
