@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const MentorsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 8vh;
-`;
-
 export const MentorContainer = styled.div`
   display: flex;
   flex-direction: column;

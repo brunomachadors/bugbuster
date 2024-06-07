@@ -4,8 +4,8 @@ import { EmailContainer, EmailLink } from './style';
 function Email() {
   return (
     <EmailContainer>
-      <MaterialIcon iconName="mail"></MaterialIcon>
       <EmailLink href="mailto:brunomachadors@gmail.com">
+        <MaterialIcon iconName="mail"></MaterialIcon>
         brunomachadors@gmail.com
       </EmailLink>
     </EmailContainer>

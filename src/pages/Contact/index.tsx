@@ -1,14 +1,27 @@
-import Email from "../../components/Email";
-import Instagram from "../../components/Instagram";
-import Linkedin from "../../components/Linkedin";
-import { ContactContainer } from "./style";
+import Email from '../../components/Email';
+import Instagram from '../../components/Instagram';
+import Linkedin from '../../components/Linkedin';
+import Logo from '../../components/Logo/Logo';
+import {
+  ContactContainer,
+  ContactInfoContainer,
+  Title,
+  TitleContainer,
+} from './style';
 
 function Contact() {
   return (
     <ContactContainer>
-      <Email></Email>
-      <Linkedin></Linkedin>
-      <Instagram></Instagram>
+      <TitleContainer>
+        <Logo></Logo>
+        <Title>CONTATOS</Title>
+      </TitleContainer>
+
+      <ContactInfoContainer>
+        <Email></Email>
+        <Instagram></Instagram>
+        <Linkedin></Linkedin>
+      </ContactInfoContainer>
     </ContactContainer>
   );
 }
