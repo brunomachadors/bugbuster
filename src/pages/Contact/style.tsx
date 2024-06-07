@@ -7,4 +7,5 @@ export const ContactContainer = styled.div`
   height: 70vh;
   width: 100%;
   flex-direction: column;
+  gap: 5vh;
 `;
