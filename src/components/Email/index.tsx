@@ -1,7 +1,15 @@
-import { EmailContainer } from "./style";
+import { MaterialIcon } from '../Icons/style';
+import { EmailContainer, EmailLink } from './style';
 
 function Email() {
-  return <EmailContainer>Email: brunomachadors@gmail.com</EmailContainer>;
+  return (
+    <EmailContainer>
+      <MaterialIcon iconName="mail"></MaterialIcon>
+      <EmailLink href="mailto:brunomachadors@gmail.com">
+        brunomachadors@gmail.com
+      </EmailLink>
+    </EmailContainer>
+  );
 }
 
 export default Email;
