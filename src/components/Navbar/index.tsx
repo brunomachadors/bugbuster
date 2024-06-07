@@ -47,6 +47,9 @@ const Navbar: React.FC = () => {
         <StyledLink to="/mentors" onClick={toggleMenu}>
           QUEM SOMOS
         </StyledLink>
+        <StyledLink to="/contact" onClick={toggleMenu}>
+          CONTATO
+        </StyledLink>
       </NavLinks>
     </NavbarContainer>
   );
