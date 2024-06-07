@@ -1,9 +1,9 @@
 import { IService } from '../../Types/IServices';
+import { MaterialIcon } from '../Icons/style';
 import {
   BlockContainer,
   Description,
   DescriptionContainer,
-  MaterialIcon,
   Title,
   TitleContainer,
 } from './style';

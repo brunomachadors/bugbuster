@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 
-export const OurServicesContainer = styled.div`
+export const MentorsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 8vh;
   margin-top: 2vh;
-  padding-bottom: 20vh;
   gap: 3vh;
 `;
-
 export const TitleContainer = styled.div`
   display: flex;
   gap: 1vw;

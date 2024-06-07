@@ -34,6 +34,7 @@ const TitleContainer = styled.div`
   gap: 1vw;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
 `;
 
 const IntroTitle = styled.h1`
