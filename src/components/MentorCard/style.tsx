@@ -64,3 +64,35 @@ export const MentorBlockContainer = styled.div`
   justify-content: center;
   width: 100%;
 `;
+
+export const ListsContainer = styled.div`
+  display: flex;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const CurrentCompany = styled.p`
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: bold;
+`;
+
+export const CompanyImage = styled.img`
+  width: 30%;
+  height: auto;
+
+  @media (min-width: 1024px) {
+    width: 25%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 35%;
+  }
+
+  @media (max-width: 767px) {
+    width: 50%;
+  }
+`;

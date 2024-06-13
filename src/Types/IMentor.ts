@@ -6,4 +6,8 @@ export interface Mentor {
   frameworks: string[];
   description: string;
   imageUrl: string;
+  company: {
+    name: string;
+    image: string;
+  };
 }
