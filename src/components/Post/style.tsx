@@ -10,6 +10,11 @@ export const PostContainer = styled.div`
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -17,6 +22,10 @@ export const Title = styled.h1`
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const BannerContainer = styled.div`

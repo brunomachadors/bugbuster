@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <HomeContainer id="homeContainer">
       <HomeIntroSection></HomeIntroSection>
-      <Posts title="ULTIMA PUBLICAÇÃO"></Posts>
+      <Posts title="ÚLTIMA PUBLICAÇÃO"></Posts>
     </HomeContainer>
   );
 };

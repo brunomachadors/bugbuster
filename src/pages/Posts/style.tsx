@@ -9,6 +9,10 @@ export const PostsContainer = styled.div`
   width: 80%;
   margin: 2vh auto 8vh auto;
   gap: 3vh;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const TitleContainer = styled.div`
