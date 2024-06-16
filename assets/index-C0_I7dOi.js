@@ -169,6 +169,10 @@ Error generating stack: `+o.message+`
   width: 80%;
   margin: 2vh auto 8vh auto;
   gap: 3vh;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `,F1=z.div`
   display: flex;
   gap: 1vw;
@@ -189,11 +193,20 @@ Error generating stack: `+o.message+`
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 10px;
+  }
 `,B1=z.h1`
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `,V1=z.div`
   display: flex;
   justify-content: center;
@@ -234,7 +247,7 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   margin-top: 1vh;
   gap: 3vh;
-`,q1=()=>x.jsxs(J1,{id:"homeContainer",children:[x.jsx(M1,{}),x.jsx(Kd,{title:"ULTIMA PUBLICAÇÃO"})]}),b1=z.footer`
+`,q1=()=>x.jsxs(J1,{id:"homeContainer",children:[x.jsx(M1,{}),x.jsx(Kd,{title:"ÚLTIMA PUBLICAÇÃO"})]}),b1=z.footer`
   display: flex;
   justify-content: center;
   align-items: center;
