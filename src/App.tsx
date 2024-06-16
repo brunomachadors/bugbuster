@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Mentors from './pages/Mentors';
 import OurServices from './pages/OurServices';
 import Contact from './pages/Contact';
+import Posts from './pages/Posts';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/posts" element={<Posts title="PUBLICAÇÕES" />} />
         <Route path="/ourservices" element={<OurServices />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/contact" element={<Contact />} />
