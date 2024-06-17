@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
   gap: 5vh;
 
   @media (max-width: 768px) {
-    gap: 3vh;
+    gap: 10rem;
     padding: 0 1em;
   }
 
