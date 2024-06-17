@@ -4,19 +4,17 @@ export const OurServicesContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
   width: 100%;
   flex-direction: column;
-  margin-top: 2vh;
+  padding: 5vh 0; /* Adicionar padding em vez de height fixa */
   gap: 3vh;
-  margin-bottom: 8rem;
 
   @media (max-width: 768px) {
-    margin-bottom: 1rem;
+    padding: 4vh 0;
   }
 
   @media (max-width: 480px) {
-    margin-bottom: 10rem;
+    padding: 3vh 0;
   }
 `;
 
