@@ -7,5 +7,5 @@ export const HomeContainer = styled.div`
   width: 100%;
   flex-direction: column;
   margin-top: 1vh;
-  gap: 3vh;
+  gap: 5vh;
 `;

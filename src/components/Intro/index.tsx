@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import Logo from '../Logo/Logo';
+import Banner from '../Banner';
 
-// Defina uma interface para os props do componente IntroDescription
 interface IntroDescriptionProps {
   backgroundColor?: string;
   color?: string;
@@ -12,11 +11,10 @@ const IntroContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
-  border-radius: 20px;
   max-width: 80vw;
   text-align: center;
   line-height: 1.5;
+  border-bottom: 1px solid black;
 
   @media (min-width: 768px) {
     font-size: 1.25em;
@@ -58,14 +56,15 @@ const HomeIntroSection = () => {
   return (
     <IntroContainer>
       <TitleContainer>
-        <Logo />
         <IntroTitle>BUG BUSTER</IntroTitle>
       </TitleContainer>
+      <Banner></Banner>
       <IntroDescription backgroundColor="#000000c2" color="white">
         Somos uma página especializada em serviços de mentoria para
         profissionais em transição de carreira ou buscando aprimoramento na área
         de teste de software.
       </IntroDescription>
+
       <IntroDescription>
         Nosso objetivo é fornecer orientação personalizada para ajudá-lo a
         alcançar seus objetivos profissionais.

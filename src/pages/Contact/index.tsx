@@ -17,7 +17,6 @@ function Contact() {
         <Logo></Logo>
         <Title>CONTATOS</Title>
       </TitleContainer>
-
       <ContactInfoContainer>
         <Email></Email>
         <Instagram></Instagram>

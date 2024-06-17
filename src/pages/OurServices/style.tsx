@@ -10,6 +10,7 @@ export const OurServicesContainer = styled.div`
   margin-top: 2vh;
   padding-bottom: 20vh;
   gap: 3vh;
+  margin-bottom: 5vh;
 `;
 
 export const TitleContainer = styled.div`

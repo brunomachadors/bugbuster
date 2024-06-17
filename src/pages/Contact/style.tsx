@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: ce;
   align-items: center;
   height: 100vh;
   width: 100%;
