@@ -8,9 +8,16 @@ export const OurServicesContainer = styled.div`
   width: 100%;
   flex-direction: column;
   margin-top: 2vh;
-  padding-bottom: 20vh;
   gap: 3vh;
-  margin-bottom: 5vh;
+  margin-bottom: 8rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 10rem;
+  }
 `;
 
 export const TitleContainer = styled.div`
