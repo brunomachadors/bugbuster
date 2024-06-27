@@ -77,3 +77,7 @@ export const ExpandedImage = styled.img`
   max-height: 90%;
   object-fit: contain;
 `;
+
+export const PostMetaTags = styled.div`
+  display: none; /* Esconder este componente, ele só existe para definir meta tags */
+`;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import {
   PostContainer,
   Title,
@@ -10,6 +9,7 @@ import {
   Signature,
   ExpandedImageContainer,
   ExpandedImage,
+  PostMetaTags,
 } from './style';
 import PostImage from '../Image';
 import { IPost } from '../../Types/IPost';
@@ -27,9 +27,8 @@ const Post: React.FC<PostProps> = ({ post }) => {
 
   return (
     <PostContainer>
-      {/* Meta tags dinâmicas com react-helmet */}
-      <Helmet>
-        <title>{post.title}</title>
+      <PostMetaTags>
+        {/* Meta tags */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.content[0]?.value} />
         <meta property="og:image" content={post.banner} />
@@ -38,7 +37,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
           content={`https://seu-site.com/posts/${post.id}`}
         />
         <meta property="og:type" content="article" />
-      </Helmet>
+      </PostMetaTags>
 
       <Title>{post.title}</Title>
 
