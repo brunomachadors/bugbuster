@@ -15,7 +15,7 @@ const Home = () => {
       <Mentors></Mentors>
       <Posts
         title="ÚLTIMA PUBLICAÇÃO"
-        posts={examplePosts[examplePosts.length - 1]}
+        posts={[examplePosts[examplePosts.length - 1]]} // Passar um array com um único post
       ></Posts>
       <Contact></Contact>
     </HomeContainer>

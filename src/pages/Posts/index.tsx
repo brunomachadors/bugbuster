@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { CustomLink, PostsContainer, Title, TitleContainer } from './style';
 import Post from '../../components/Post';
 import { IPost } from '../../Types/IPost';
@@ -10,8 +9,9 @@ interface PostsProps {
   posts?: IPost[];
 }
 
-const Posts: React.FC<PostsProps> = ({ title, posts }) => {
-  const postsToRender = Array.isArray(posts) ? posts : examplePosts;
+const Posts: React.FC<PostsProps> = ({ title, posts = examplePosts }) => {
+  // Aqui, se posts for indefinido, examplePosts será usado
+  const postsToRender = posts;
 
   return (
     <PostsContainer>
