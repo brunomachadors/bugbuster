@@ -1,4 +1,3 @@
-// src/components/Navbar/style.tsx
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +5,7 @@ interface NavLinksProps {
   isOpen: boolean;
 }
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.nav<{ backgroundColor?: string }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +14,7 @@ export const NavbarContainer = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: ${(props) => props.backgroundColor || '#fff'};
   z-index: 1000;
 `;
 

@@ -33,16 +33,12 @@ export const BannerContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  width: 100%;
+  width: 60%;
 `;
 
 export const Banner = styled.img`
-  width: 40vw;
+  max-width: 100%;
   height: auto;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 export const Content = styled.p`
@@ -55,4 +51,29 @@ export const Content = styled.p`
 
 export const ImageContainer = styled.div`
   width: 100%;
+  cursor: pointer; /* Adicionando cursor pointer para indicar que a imagem é clicável */
+`;
+
+export const Signature = styled.p`
+  font-size: 1rem;
+  margin-top: 20px; /* Espaçamento entre o conteúdo e a assinatura */
+`;
+
+export const ExpandedImageContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+export const ExpandedImage = styled.img`
+  max-width: 90%;
+  max-height: 90%;
+  cursor: pointer;
 `;
