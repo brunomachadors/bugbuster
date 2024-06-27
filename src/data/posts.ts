@@ -69,8 +69,35 @@ export const examplePosts: IPost[] = [
       {
         type: 'text',
         value:
-          'Desde que comecei a atuar como mentor há alguns meses, a experiência tem sido verdadeiramente gratificante. Tive o privilégio de guiar equipes em dois projetos distintos: Tem Vaga Mestre e Diaristando. No Diaristando, estamos nos estágios iniciais, explorando frameworks antes de começar oficialmente o desenvolvimento do projeto. Recentemente, iniciamos o uso do Playwright para automação de testes em uma aplicação semelhante a uma Pokédex. No Tem Vaga Mestre, estamos avançando significativamente, implementando testes manuais e automatizados tanto no front-end quanto no back-end.',
+          'Essa publicação tem o objetivo de compartilhar alguns dos meus primeiros pensamentos sobre ser um mentor na área de testes. Trabalho com testes de software desde 2009 e recentemente comecei a explorar esse novo aspecto da minha carreira.',
       },
+      {
+        type: 'text',
+        value:
+          'Cerca de um ano atrás, minha esposa começou a trabalhar em um projeto voluntário, o que acabou gerando uma oportunidade para eu atuar como mentor no mesmo projeto. O projeto se chama “Tem Vaga Mestre”. A ideia é criar uma plataforma de RPG que facilite o encontro entre mestres e jogadores de RPG. Este é um desafio imenso, pois não se trata apenas de facilitar esses encontros, mas também de criar uma rede social onde a comunidade possa se encontrar e, futuramente, jogar.',
+      },
+      {
+        type: 'image',
+        value:
+          'https://res.cloudinary.com/dtglidvcw/image/upload/v1719503672/BUGBUSTER/xfsleawyi8kcoyg3iejc.png',
+      },
+      {
+        type: 'text',
+        value:
+          'Comecei a trabalhar com a Jessica e a Renata no projeto há mais de um ano. Encontrei a primeira mensagem datada de julho de 2023. Inicialmente, a ideia era apenas trazer tópicos para discussão sobre o assunto, o que de fato gera muito valor. ',
+      },
+      {
+        type: 'text',
+        value:
+          'No entanto, aos poucos, comecei a pensar na ideia de introduzir alguns desafios práticos. Comecei a trabalhar com a Jessica e a Renata no projeto há mais de um ano (encontrei a primeira mensagem datada de julho de 2023. Inicialmente), a ideia era apenas trazer tópicos para discussão sobre o assunto, o que de fato gera muito valor. No entanto, aos poucos, comecei a pensar na ideia de introduzir alguns desafios práticos. Uma das primeiras atividades que realizamos foi abrir uma página de testes (cheia de bugs) para tentar encontrar e reportar o máximo de bugs possíveis, destacando suas criticidades. ',
+      },
+
+      {
+        type: 'text',
+        value:
+          'Foi aí que percebi um grande potencial em trabalhar com aspectos mais práticos, em vez de focar apenas na teoria. Eu fiquei impressionado com a quantidade de bugs que elas encontraram. Contudo, alguns bugs que pareciam óbvios para quem já está na área passaram despercebidos. Hoje, passado um ano desde o primeiro contato, o projeto já evoluiu muito, tendo diversas páginas, APIs e espaço para que pudéssemos explorar novos testes automatizados. Semana passada, recebi a atualização de que uma das participantes da mentoria conseguiu sua primeira vaga de emprego na área, e fiquei tão feliz como se fosse a minha.',
+      },
+
       {
         type: 'image',
         value:
@@ -79,24 +106,66 @@ export const examplePosts: IPost[] = [
       {
         type: 'text',
         value:
-          'Uma nota pessoal minha é que fico impressionado com a evolução em tão pouco tempo. Quando começamos há alguns meses, elas ainda estavam dando os primeiros passos na área de testes. Agora, gradualmente, estão se tornando cada vez mais independentes e constantemente me surpreendem.',
+          'Já no projeto “Diaristando”, estamos ainda no começo, mas a ideia é conectar diaristas e contratantes para que possam efetuar serviços de limpeza em residências ou empresas. Aqui está uma imagem de divulgação do projeto.',
+      },
+
+      {
+        type: 'text',
+        value:
+          'Nesse projeto, trabalho com a Tatiana Honda, a Débora Silva e a Karina Yamashita. Como o projeto está no início, montamos planos para realizar exercícios e pesquisas sobre diversos temas. Um dos temas que escolhemos foi sobre Teste de Acessibilidade, o que acabou gerando um artigo meu sobre o assunto. Descobrimos boas práticas e adicionamos ferramentas para testar. Logo depois, começamos a fazer novos testes automatizados, seja testes de API usando o Postman e o Newman, ou agora, recentemente, testes usando o Playwright.',
       },
       {
         type: 'image',
         value:
           'https://res.cloudinary.com/dtglidvcw/image/upload/v1719424441/BUGBUSTER/jxx71mohving6decooj2.png',
       },
+
       {
         type: 'text',
         value:
-          'Nessa imagem acima estávamos desenvolvendo testes automatizados de front-end para essa página do pokedex.',
+          'A parte mais interessante disso tudo é que tive a chance de colher resultados práticos. Fui convidado para falar no 3º Test Tribe do Porto e ser orador sobre o tema. Ser mentor não é apenas ensinar, mas também aprender junto, muitas vezes transformando os mentorados em quase colegas de estudo.',
+      },
+
+      {
+        type: 'image',
+        value:
+          'https://res.cloudinary.com/dtglidvcw/image/upload/v1719503923/BUGBUSTER/pozhytyoxx1odetqgzrm.webp',
+      },
+
+      {
+        type: 'text',
+        value:
+          'Após iniciar os dois projetos voluntários, a Mindera me convidou para um novo desafio: ser mentor do Luís Moreira, que está participando de um programa de estágio voltado para a integração de pessoas do espectro autista no ambiente de trabalho.',
       },
       {
         type: 'text',
         value:
-          'Se você possui interesse em conhecer mais sobre a área de testes ou busca alguma especialização para que possa desempenhar melhor na área, entre em contato conosco.',
+          'Sem entrar em muitos detalhes, posso dizer que, inicialmente, o Luís não estava progredindo bem e não se adaptou ao seu primeiro mentor. Foi então que meu nome surgiu para acompanhá-lo. Percebi que um dos principais obstáculos na aprendizagem dele era a questão da motivação. Para facilitar o processo, utilizei uma abordagem de teste de API com Pokémon, e a resposta foi surpreendente.',
+      },
+      {
+        type: 'text',
+        value:
+          'Em pouco tempo, o Luís estava realizando testes de API extremamente complexos, demonstrando um bom entendimento de conceitos de programação e testes. Criamos o hábito de almoçar juntos uma vez por semana, o que nos permitiu nos conectar melhor e compreender os desafios que ele enfrenta. Fomos a uma pizzaria brasileira chamada Rei da Gula, que ele adorou!',
+      },
+      {
+        type: 'image',
+        value:
+          '    https://miro.medium.com/v2/resize:fit:720/format:webp/1*CGhyGKoeiXJHzmAUaTgdnQ.jpeg',
+      },
+
+      {
+        type: 'text',
+        value:
+          'Sempre tive muita vontade de ensinar outras pessoas, e acredito que essa abordagem mais individual ou pessoal me permite conectar e entender melhor as dificuldades de cada um no seu desenvolvimento profissional. Atualmente, depois de um ano atuando como mentor, resolvi abrir meu serviço para o público através do meu portal chamado Bug Buster.',
+      },
+
+      {
+        type: 'text',
+        value:
+          'Caso você, que está lendo este texto, tenha interesse em desenvolver habilidades na área de testes ou até mesmo fazer uma formação básica, pode entrar em contato comigo através do meu site BUG BUSTER.',
       },
     ],
+
     author: 'Bruno Machado',
   },
 ];
