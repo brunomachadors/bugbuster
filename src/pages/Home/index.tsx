@@ -11,12 +11,13 @@ const Home = () => {
   return (
     <HomeContainer id="homeContainer">
       <HomeIntroSection></HomeIntroSection>
-      <OurServices></OurServices>
-      <Mentors></Mentors>
       <Posts
         title="ÚLTIMA PUBLICAÇÃO"
         posts={[examplePosts[examplePosts.length - 1]]} // Passar um array com um único post
       ></Posts>
+      <OurServices></OurServices>
+      <Mentors></Mentors>
+
       <Contact></Contact>
     </HomeContainer>
   );

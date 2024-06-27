@@ -57,7 +57,7 @@ export const examplePosts: IPost[] = [
       },
     ],
 
-    author: 'Bruno Machado', // Adicionando o autor aqui
+    author: 'Bruno Machado',
   },
 
   {
@@ -69,17 +69,12 @@ export const examplePosts: IPost[] = [
       {
         type: 'text',
         value:
-          'Desde que comecei a atuar como mentor há alguns meses, a experiência tem sido verdadeiramente gratificante. Tive o privilégio de guiar equipes em dois projetos distintos: Tem Vaga Mestre e Diaristando.',
+          'Desde que comecei a atuar como mentor há alguns meses, a experiência tem sido verdadeiramente gratificante. Tive o privilégio de guiar equipes em dois projetos distintos: Tem Vaga Mestre e Diaristando. No Diaristando, estamos nos estágios iniciais, explorando frameworks antes de começar oficialmente o desenvolvimento do projeto. Recentemente, iniciamos o uso do Playwright para automação de testes em uma aplicação semelhante a uma Pokédex. No Tem Vaga Mestre, estamos avançando significativamente, implementando testes manuais e automatizados tanto no front-end quanto no back-end.',
       },
       {
         type: 'image',
         value:
           'https://res.cloudinary.com/dtglidvcw/image/upload/v1719477885/BUGBUSTER/s1fa5v6b1adahhtwmdox.png',
-      },
-      {
-        type: 'text',
-        value:
-          'No Diaristando, estamos nos estágios iniciais, explorando frameworks antes de começar oficialmente o desenvolvimento do projeto. Recentemente, iniciamos o uso do Playwright para automação de testes em uma aplicação semelhante a uma Pokédex. No Tem Vaga Mestre, estamos avançando significativamente, implementando testes manuais e automatizados tanto no front-end quanto no back-end.',
       },
       {
         type: 'text',
@@ -91,11 +86,15 @@ export const examplePosts: IPost[] = [
         value:
           'https://res.cloudinary.com/dtglidvcw/image/upload/v1719424441/BUGBUSTER/jxx71mohving6decooj2.png',
       },
-
       {
         type: 'text',
         value:
-          'Nessa imagem acima estavamos desenvolvendo testes automatizados de front-end para essa página do pokedex',
+          'Nessa imagem acima estávamos desenvolvendo testes automatizados de front-end para essa página do pokedex.',
+      },
+      {
+        type: 'text',
+        value:
+          'Se você possui interesse em conhecer mais sobre a área de testes ou busca alguma especialização para que possa desempenhar melhor na área, entre em contato conosco.',
       },
     ],
     author: 'Bruno Machado',
