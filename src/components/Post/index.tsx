@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import {
   PostContainer,
   Title,
@@ -26,6 +27,19 @@ const Post: React.FC<PostProps> = ({ post }) => {
 
   return (
     <PostContainer>
+      {/* Meta tags dinâmicas com react-helmet */}
+      <Helmet>
+        <title>{post.title}</title>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.content[0]?.value} />
+        <meta property="og:image" content={post.banner} />
+        <meta
+          property="og:url"
+          content={`https://seu-site.com/posts/${post.id}`}
+        />
+        <meta property="og:type" content="article" />
+      </Helmet>
+
       <Title>{post.title}</Title>
 
       <BannerContainer>
