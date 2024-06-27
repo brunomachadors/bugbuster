@@ -1,6 +1,10 @@
 export interface IPost {
+  id: string;
   title: string;
   banner: string;
-  content: string[];
-  imageUrl: string;
+  content: Array<{
+    type: 'text' | 'image';
+    value: string;
+  }>;
+  author: string;
 }

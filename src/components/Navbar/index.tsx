@@ -1,4 +1,3 @@
-// src/components/Navbar/index.tsx
 import React, { useState, useEffect } from 'react';
 import {
   NavLinks,
@@ -31,10 +30,8 @@ const Navbar: React.FC = () => {
 
   return (
     <NavbarContainer>
-      <MenuToggle>
-        <MenuIcon className="material-icons" onClick={toggleMenu}>
-          menu
-        </MenuIcon>
+      <MenuToggle onClick={toggleMenu}>
+        <MenuIcon className="material-icons">menu</MenuIcon>
         <Logo />
       </MenuToggle>
       <NavLinks isOpen={isOpen}>

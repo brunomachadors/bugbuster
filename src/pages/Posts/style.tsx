@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const PostsContainer = styled.div`
   display: flex;
@@ -27,4 +28,9 @@ export const Title = styled.h1`
   font-size: xx-large;
   text-align: center;
   margin-bottom: 1rem;
+`;
+
+export const CustomLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;
