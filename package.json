@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-helmet": "^6.1.11",
     "material-icons": "^1.13.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.1",
     "styled-components": "^6.1.11"
   },

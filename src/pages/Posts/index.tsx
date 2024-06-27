@@ -10,15 +10,12 @@ interface PostsProps {
 }
 
 const Posts: React.FC<PostsProps> = ({ title, posts = examplePosts }) => {
-  // Aqui, se posts for indefinido, examplePosts será usado
-  const postsToRender = posts;
-
   return (
     <PostsContainer>
       <TitleContainer>
         <Title>{title}</Title>
       </TitleContainer>
-      {postsToRender
+      {posts
         .slice()
         .reverse()
         .map((post, index) => (
