@@ -84,12 +84,7 @@ export const examplePosts: IPost[] = [
       {
         type: 'text',
         value:
-          'Comecei a trabalhar com a Jessica e a Renata no projeto há mais de um ano. Encontrei a primeira mensagem datada de julho de 2023. Inicialmente, a ideia era apenas trazer tópicos para discussão sobre o assunto, o que de fato gera muito valor. ',
-      },
-      {
-        type: 'text',
-        value:
-          'No entanto, aos poucos, comecei a pensar na ideia de introduzir alguns desafios práticos. Comecei a trabalhar com a Jessica e a Renata no projeto há mais de um ano (encontrei a primeira mensagem datada de julho de 2023. Inicialmente), a ideia era apenas trazer tópicos para discussão sobre o assunto, o que de fato gera muito valor. No entanto, aos poucos, comecei a pensar na ideia de introduzir alguns desafios práticos. Uma das primeiras atividades que realizamos foi abrir uma página de testes (cheia de bugs) para tentar encontrar e reportar o máximo de bugs possíveis, destacando suas criticidades. ',
+          'Comecei a trabalhar com a Jessica e a Renata no projeto há mais de um ano (encontrei a primeira mensagem datada de julho de 2023). Inicialmente, a ideia era apenas trazer tópicos para discussão sobre o assunto, o que de fato gera muito valor. No entanto, aos poucos, comecei a pensar na ideia de introduzir alguns desafios práticos. Uma das primeiras atividades que realizamos foi abrir uma página de testes (cheia de bugs) para tentar encontrar e reportar o máximo de bugs possíveis, destacando suas criticidades. ',
       },
 
       {
