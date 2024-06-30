@@ -66,7 +66,7 @@ const MediumPostPage: React.FC<MediumPostPageProps> = ({ id }) => {
   return (
     <ContentContainer>
       <GlobalStyle />
-      <Title>{post.title}</Title>
+      <Title>{post.title.toUpperCase()}</Title>
       <Categories>
         {post.categories.map((category, index) => (
           <span key={index}>{category}</span>

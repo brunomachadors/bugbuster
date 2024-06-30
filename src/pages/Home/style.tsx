@@ -7,10 +7,10 @@ export const HomeContainer = styled.div`
   width: 100%;
   flex-direction: column;
   margin-top: 1vh;
-  gap: 5vh;
+  gap: 10%;
 
   @media (max-width: 768px) {
-    gap: 10rem;
+    gap: 5rem;
     padding: 0 1em;
   }
 

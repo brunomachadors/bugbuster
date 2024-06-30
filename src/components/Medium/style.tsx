@@ -4,6 +4,12 @@ export const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
     height: auto;
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box; /* Melhora o cálculo do tamanho total do elemento */
+    max-width: 100%;
   }
 `;
 
@@ -11,17 +17,19 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1px;
-  max-width: 100%;
-  padding: 5%;
+  gap: 10px;
+  max-width: 75%;
   padding-bottom: 5vh;
   margin: 0 auto;
-  margin-top: 5vh;
+
+  @media (max-width: 1200px) {
+    max-width: 90%;
+  }
 
   img {
-    max-width: 90%;
+    max-width: 50%;
     height: auto;
-    display: flex;
+    display: block;
     margin: 0 auto;
   }
 
@@ -32,15 +40,17 @@ export const ContentContainer = styled.div`
   h5,
   h6 {
     text-align: center;
+    max-width: 90%;
   }
 
   p {
     text-align: justify;
-    line-height: 1.6;
     max-width: 90%;
     margin: 0 auto;
-    word-wrap: break-word;
-    padding-bottom: 1vh;
+    word-wrap: normal;
+    padding-bottom: 2vh;
+    font-size: large; /* Aumenta o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
   }
 
   figcaption {
@@ -48,6 +58,9 @@ export const ContentContainer = styled.div`
   }
 
   ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
   }
 
   li {
@@ -59,10 +72,11 @@ export const ContentContainer = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Aumenta a margem inferior para separar do conteúdo abaixo */
+  font-size: 2.5rem; /* Reduz o tamanho da fonte */
 `;
 
 export const PubDate = styled.span`
@@ -83,8 +97,9 @@ export const Categories = styled.div`
   span {
     background-color: #c40202;
     border-radius: 8px;
-    padding: 3% 4%;
+    padding: 10px 16px; /* Aumenta o padding para melhor espaçamento interno */
     color: #ffffff;
+    font-size: 1rem; /* Aumenta o tamanho da fonte */
   }
 `;
 
@@ -100,6 +115,7 @@ export const PublicationContainer = styled.div`
   align-items: center;
   gap: 5px;
   padding-bottom: 2vh;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -120,7 +136,9 @@ export const Banner = styled.img`
 
 export const Content = styled.p`
   text-align: justify;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 `;
 
 export const ImageContainer = styled.div`

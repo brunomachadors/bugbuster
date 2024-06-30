@@ -14,7 +14,10 @@ import {
   PostThumbnail,
   PostsContainer,
   Title,
+  FirstParagraph,
+  TitleContainer, // Novo styled component para o primeiro parágrafo
 } from './style';
+import Logo from '../../components/Logo/Logo';
 
 const MediumFeed: React.FC = () => {
   const [feedItems, setFeedItems] = useState<MediumPost[]>([]);
@@ -56,6 +59,15 @@ const MediumFeed: React.FC = () => {
     return img ? img.src : null;
   };
 
+  const extractFirstParagraph = (content: string): string | null => {
+    const doc = new DOMParser().parseFromString(content, 'text/html');
+    const paragraphs = doc.querySelectorAll('p');
+    if (paragraphs.length > 0) {
+      return paragraphs[0].textContent;
+    }
+    return null;
+  };
+
   const normalizeString = (str: string) =>
     str
       .normalize('NFD')
@@ -73,10 +85,14 @@ const MediumFeed: React.FC = () => {
   return (
     <MediumFeedContainer>
       <GlobalStyle />
+      <TitleContainer>
+        <Title>MEDIUM</Title>
+        <Logo></Logo>
+      </TitleContainer>
       <PostsContainer>
         {feedItems.map((item, index) => (
           <PostContainer key={index} onClick={() => handlePostClick(item)}>
-            <Title>{item.title}</Title>
+            <Title>{item.title.toUpperCase()}</Title>
             <Categories>
               {item.categories.map((category, index) => (
                 <span key={index}>{category}</span>
@@ -87,6 +103,11 @@ const MediumFeed: React.FC = () => {
 
             {item.thumbnail && (
               <PostThumbnail src={item.thumbnail} alt={item.title} />
+            )}
+            {item.content && (
+              <FirstParagraph>
+                {extractFirstParagraph(item.content)}
+              </FirstParagraph>
             )}
           </PostContainer>
         ))}
