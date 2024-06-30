@@ -16,6 +16,10 @@ export const NavbarContainer = styled.nav<{ backgroundColor?: string }>`
   left: 0;
   background-color: ${(props) => props.backgroundColor || '#fff'};
   z-index: 1000;
+
+  @media (min-width: 769px) {
+    width: 93%;
+  }
 `;
 
 export const NavLinks = styled.div<NavLinksProps>`
