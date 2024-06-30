@@ -11,6 +11,11 @@ export const PostContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     width: 90%;
     padding: 10px;

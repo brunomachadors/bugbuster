@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 interface NavLinksProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 
 export const NavbarContainer = styled.nav<{ backgroundColor?: string }>`
@@ -28,7 +28,7 @@ export const NavLinks = styled.div<NavLinksProps>`
   background: #fff;
   transition: max-height 0.3s ease-in-out;
   overflow: hidden;
-  max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+  max-height: ${({ $isOpen }) => ($isOpen ? '300px' : '0')};
   justify-content: center;
   align-items: center;
 

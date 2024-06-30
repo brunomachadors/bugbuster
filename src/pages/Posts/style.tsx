@@ -11,6 +11,11 @@ export const PostsContainer = styled.div`
   margin: 2vh auto 8vh auto;
   gap: 3vh;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }

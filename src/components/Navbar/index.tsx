@@ -34,12 +34,15 @@ const Navbar: React.FC = () => {
         <MenuIcon className="material-icons">menu</MenuIcon>
         <Logo />
       </MenuToggle>
-      <NavLinks isOpen={isOpen}>
+      <NavLinks $isOpen={isOpen}>
         <StyledLink to="/" onClick={toggleMenu}>
           BUG BUSTER
         </StyledLink>
         <StyledLink to="/posts" onClick={toggleMenu}>
           PUBLICAÇÕES
+        </StyledLink>
+        <StyledLink to="/medium" onClick={toggleMenu}>
+          MEDIUM
         </StyledLink>
         <StyledLink to="/ourservices" onClick={toggleMenu}>
           SERVIÇOS
