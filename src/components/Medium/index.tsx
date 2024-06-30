@@ -18,6 +18,7 @@ interface MediumPostPageProps {
 
 const MediumPostPage: React.FC<MediumPostPageProps> = ({ id }) => {
   const [post, setPost] = useState<MediumPost | null>(null);
+  const [expandedImage, setExpandedImage] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -61,6 +62,16 @@ const MediumPostPage: React.FC<MediumPostPageProps> = ({ id }) => {
     }
   }, [id, location.state]);
 
+  // Função para lidar com o clique na imagem
+  const handleImageClick = (imageUrl: string) => {
+    setExpandedImage(imageUrl);
+  };
+
+  // Função para fechar a imagem expandida
+  const closeExpandedImage = () => {
+    setExpandedImage(null);
+  };
+
   if (!post) return null;
 
   return (
@@ -78,7 +89,26 @@ const MediumPostPage: React.FC<MediumPostPageProps> = ({ id }) => {
           publicado em {new Date(post.pubDate).toLocaleDateString()}
         </PubDate>
       </PublicationContainer>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div
+        dangerouslySetInnerHTML={{ __html: post.content }}
+        onClick={(e) => {
+          if ((e.target as HTMLElement).tagName === 'IMG') {
+            handleImageClick((e.target as HTMLImageElement).src);
+          }
+        }}
+      />
+
+      {expandedImage && (
+        <>
+          <div className="overlay" onClick={closeExpandedImage}></div>
+          <img
+            className="expanded-image"
+            src={expandedImage}
+            alt="Imagem Expandida"
+            onClick={closeExpandedImage}
+          />
+        </>
+      )}
     </ContentContainer>
   );
 };

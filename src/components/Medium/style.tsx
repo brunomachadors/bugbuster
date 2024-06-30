@@ -8,12 +8,46 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    box-sizing: border-box; /* Melhora o cálculo do tamanho total do elemento */
+    box-sizing: border-box;
     max-width: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .expanded-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    width: 100%;
+    height: auto;
+    cursor: zoom-out; 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 900; 
+    opacity: 1; 
+    transition: opacity 0.3s ease-in-out;
   }
 `;
 
 export const ContentContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,10 +61,12 @@ export const ContentContainer = styled.div`
   }
 
   img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
   }
 
   h1,
@@ -49,8 +85,8 @@ export const ContentContainer = styled.div`
     margin: 0 auto;
     word-wrap: normal;
     padding-bottom: 2vh;
-    font-size: large; /* Aumenta o tamanho da fonte */
-    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    font-size: large;
+    line-height: 1.6;
   }
 
   figcaption {
@@ -75,8 +111,8 @@ export const ContentContainer = styled.div`
 export const Title = styled.h1`
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px; /* Aumenta a margem inferior para separar do conteúdo abaixo */
-  font-size: 2.5rem; /* Reduz o tamanho da fonte */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 `;
 
 export const PubDate = styled.span`
@@ -97,16 +133,10 @@ export const Categories = styled.div`
   span {
     background-color: #c40202;
     border-radius: 8px;
-    padding: 10px 16px; /* Aumenta o padding para melhor espaçamento interno */
+    padding: 10px 16px;
     color: #ffffff;
-    font-size: 1rem; /* Aumenta o tamanho da fonte */
+    font-size: 1rem;
   }
-`;
-
-export const Thumbnail = styled.img`
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
 `;
 
 export const PublicationContainer = styled.div`
@@ -119,29 +149,4 @@ export const PublicationContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`;
-
-export const BannerContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 60%;
-`;
-
-export const Banner = styled.img`
-  max-width: 100%;
-  height: auto;
-`;
-
-export const Content = styled.p`
-  text-align: justify;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-`;
-
-export const ImageContainer = styled.div`
-  width: 100%;
-  cursor: pointer;
 `;
