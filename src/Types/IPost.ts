@@ -8,3 +8,12 @@ export interface IPost {
   }>;
   author: string;
 }
+
+export interface MediumPost {
+  title: string;
+  pubDate: string;
+  content: string;
+  author: string;
+  categories: string[];
+  thumbnail?: string | null; // Allow thumbnail to be string or null
+}

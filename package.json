@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@types/react-helmet": "^6.1.11",
+    "@types/styled-components": "^5.1.34",
+    "axios": "^1.7.2",
     "material-icons": "^1.13.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

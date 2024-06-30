@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import Mentors from './pages/Mentors';
 import OurServices from './pages/OurServices';
 import Contact from './pages/Contact';
-import Posts from './pages/Posts';
-import PostPage from './pages/Post';
+import MediumFeed from './pages/Medium';
+import MediumPostPage from './components/Medium';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<Posts title="PUBLICAÇÕES" />} />
-        <Route path="/posts/:id" element={<PostPage />} />
+        <Route path="/medium" element={<MediumFeed />} />
+        <Route path="/medium/:id" element={<MediumPostPage id="" />} />
         <Route path="/ourservices" element={<OurServices />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/contact" element={<Contact />} />
