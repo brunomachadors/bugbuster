@@ -96,7 +96,10 @@ export const ContentContainer = styled.div`
   ul {
     list-style-type: disc;
     padding-left: 20px;
+    margin: 0 auto;
     margin-bottom: 20px;
+    max-width: 90%;
+    text-align: left;
   }
 
   li {
@@ -105,6 +108,20 @@ export const ContentContainer = styled.div`
 
   a {
     max-width: 100%;
+  }
+
+  blockquote {
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    font-style: italic;
+    color: #666;
+  }
+
+  blockquote em {
+    color: #333;
   }
 `;
 

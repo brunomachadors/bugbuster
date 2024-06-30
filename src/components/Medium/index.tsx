@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import axios, { AxiosResponse } from 'axios';
 import {
   Author,
@@ -12,53 +12,50 @@ import {
 } from './style';
 import { MediumPost } from '../../Types/IPost';
 
-interface MediumPostPageProps {
-  id: string;
-}
-
-const MediumPostPage: React.FC<MediumPostPageProps> = ({ id }) => {
+const MediumPostPage: React.FC = () => {
   const [post, setPost] = useState<MediumPost | null>(null);
   const [expandedImage, setExpandedImage] = useState<string | null>(null);
   const location = useLocation();
+  const { id } = useParams<{ id: string }>(); // Obter o ID da URL
 
   useEffect(() => {
+    const fetchPostById = async (postId: string) => {
+      try {
+        const response: AxiosResponse<{ items: MediumPost[] }> =
+          await axios.get('https://api.rss2json.com/v1/api.json', {
+            params: {
+              rss_url: 'https://medium.com/feed/@brunomachadoricardosilva',
+            },
+          });
+
+        if (response.data.items) {
+          const postData = response.data.items.find((item) => {
+            const normalizeString = (str: string) =>
+              str
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/\s+/g, '-')
+                .toLowerCase();
+
+            const normalizedItemTitle = normalizeString(item.title);
+            const normalizedId = normalizeString(postId);
+
+            return normalizedItemTitle === normalizedId;
+          });
+
+          if (postData) {
+            setPost(postData);
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching post:', error);
+      }
+    };
+
     if (location.state && location.state.post) {
       setPost(location.state.post);
-    } else {
-      const fetchPost = async () => {
-        try {
-          const response: AxiosResponse<{ items: MediumPost[] }> =
-            await axios.get('https://api.rss2json.com/v1/api.json', {
-              params: {
-                rss_url: 'https://medium.com/feed/@brunomachadoricardosilva',
-              },
-            });
-
-          if (response.data.items) {
-            const postData = response.data.items.find((item) => {
-              const normalizeString = (str: string) =>
-                str
-                  .normalize('NFD')
-                  .replace(/[\u0300-\u036f]/g, '')
-                  .replace(/\s+/g, '-')
-                  .toLowerCase();
-
-              const normalizedItemTitle = normalizeString(item.title);
-              const normalizedId = normalizeString(id);
-
-              return normalizedItemTitle === normalizedId;
-            });
-
-            if (postData) {
-              setPost(postData);
-            }
-          }
-        } catch (error) {
-          console.error('Error fetching post:', error);
-        }
-      };
-
-      fetchPost();
+    } else if (id) {
+      fetchPostById(id);
     }
   }, [id, location.state]);
 

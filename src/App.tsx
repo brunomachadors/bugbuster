@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/medium" element={<MediumFeed />} />
-        <Route path="/medium/:id" element={<MediumPostPage id="" />} />
+        <Route path="/medium/:id" element={<MediumPostPage />} />
         <Route path="/ourservices" element={<OurServices />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/contact" element={<Contact />} />
