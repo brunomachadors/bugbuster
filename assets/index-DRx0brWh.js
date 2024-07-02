@@ -652,6 +652,10 @@ Error generating stack: `+i.message+`
     max-width: 75%;
     text-align: left;
     padding: 1%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 `,$w=j.h1`
   font-weight: bold;
@@ -713,7 +717,7 @@ Error generating stack: `+i.message+`
   width: 100%;
   flex-direction: column;
 `,tf=j.h1`
-  font-size: 2rem;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 1rem;
 `;j(Rp)`
