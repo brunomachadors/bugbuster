@@ -36,7 +36,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 1rem;
 `;

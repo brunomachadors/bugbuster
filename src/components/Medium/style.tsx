@@ -152,6 +152,10 @@ export const ContentContainer = styled.div`
     max-width: 75%;
     text-align: left;
     padding: 1%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 `;
 
