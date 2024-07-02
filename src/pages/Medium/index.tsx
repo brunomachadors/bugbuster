@@ -18,6 +18,7 @@ import {
   TitleContainer, // Novo styled component para o primeiro parágrafo
 } from './style';
 import Logo from '../../components/Logo/Logo';
+import { API_KEY } from '../../data/keys';
 
 const MediumFeed: React.FC = () => {
   const [feedItems, setFeedItems] = useState<MediumPost[]>([]);
@@ -30,6 +31,7 @@ const MediumFeed: React.FC = () => {
           await axios.get('https://api.rss2json.com/v1/api.json', {
             params: {
               rss_url: 'https://medium.com/feed/@brunomachadoricardosilva',
+              api_key: API_KEY,
             },
           });
 

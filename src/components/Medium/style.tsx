@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
   }
 
   .expanded-image {
@@ -23,10 +23,10 @@ export const GlobalStyle = createGlobalStyle`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000; 
+    z-index: 1000;
     width: 100%;
     height: auto;
-    cursor: zoom-out; 
+    cursor: zoom-out;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     max-width: 90vw;
     max-height: 90vh;
@@ -39,10 +39,25 @@ export const GlobalStyle = createGlobalStyle`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    z-index: 900; 
-    opacity: 1; 
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 900;
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
+  }
+
+  pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    margin: 0 auto 15px;
+    border: 2px solid green;
+    max-width: 75%;
+    text-align: left;
+    padding: 1%;
   }
 `;
 
@@ -122,6 +137,21 @@ export const ContentContainer = styled.div`
 
   blockquote em {
     color: #333;
+  }
+
+  pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    margin: 0 auto 15px;
+    border: 2px solid black;
+    max-width: 75%;
+    text-align: left;
+    padding: 1%;
   }
 `;
 

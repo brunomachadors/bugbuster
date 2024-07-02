@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import axios, { AxiosResponse } from 'axios';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
+import 'prismjs/components/prism-javascript';
 import {
   Author,
   Categories,
@@ -11,6 +14,7 @@ import {
   Title,
 } from './style';
 import { MediumPost } from '../../Types/IPost';
+import { API_KEY } from '../../data/keys';
 
 const MediumPostPage: React.FC = () => {
   const [post, setPost] = useState<MediumPost | null>(null);
@@ -25,8 +29,12 @@ const MediumPostPage: React.FC = () => {
           await axios.get('https://api.rss2json.com/v1/api.json', {
             params: {
               rss_url: 'https://medium.com/feed/@brunomachadoricardosilva',
+              api_key: API_KEY,
             },
           });
+
+        console.log('PUBLICAÇÕES');
+        console.log(response.data.items);
 
         if (response.data.items) {
           const postData = response.data.items.find((item) => {
@@ -59,12 +67,16 @@ const MediumPostPage: React.FC = () => {
     }
   }, [id, location.state]);
 
-  // Função para lidar com o clique na imagem
+  useEffect(() => {
+    if (post) {
+      Prism.highlightAll();
+    }
+  }, [post]);
+
   const handleImageClick = (imageUrl: string) => {
     setExpandedImage(imageUrl);
   };
 
-  // Função para fechar a imagem expandida
   const closeExpandedImage = () => {
     setExpandedImage(null);
   };
