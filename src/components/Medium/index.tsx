@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import axios, { AxiosResponse } from 'axios';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism.css';
-import 'prismjs/components/prism-javascript';
 import {
   Author,
   Categories,
@@ -66,12 +63,6 @@ const MediumPostPage: React.FC = () => {
       fetchPostById(id);
     }
   }, [id, location.state]);
-
-  useEffect(() => {
-    if (post) {
-      Prism.highlightAll();
-    }
-  }, [post]);
 
   const handleImageClick = (imageUrl: string) => {
     setExpandedImage(imageUrl);
