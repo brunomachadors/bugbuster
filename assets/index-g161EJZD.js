@@ -676,9 +676,9 @@ Error generating stack: `+i.message+`
   span {
     background-color: #c40202;
     border-radius: 8px;
-    padding: 10px 16px;
+    padding: 6px 12px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `,Mw=j.div`
   display: flex;
@@ -728,21 +728,21 @@ Error generating stack: `+i.message+`
   flex-direction: column;
   align-items: center;
   gap: 1vh;
-  width: calc(100% / 3 - 30px); /* Ajustando para uma largura um pouco maior */
+  width: calc(100% / 3 - 30px);
   margin: 10px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   border: 1px dashed black;
-  text-align: center; /* Centraliza o texto dentro do PostContainer */
+  text-align: center;
 
   @media (max-width: 1200px) {
-    width: calc(100% / 2 - 30px); /* 2 colunas em telas menores que 1200px */
+    width: calc(100% / 2 - 30px);
   }
 
   @media (max-width: 768px) {
-    width: calc(100% - 30px); /* 1 coluna em telas menores que 768px */
+    width: calc(100% - 30px);
   }
 `,Qw=j.p`
   text-align: justify;
@@ -750,6 +750,6 @@ Error generating stack: `+i.message+`
   margin: 0 auto;
   word-wrap: normal;
   padding-bottom: 1vh;
-  font-size: 1.1rem; /* Tamanho da fonte do primeiro parágrafo */
-  line-height: 1.6; /* Espaçamento entre linhas do primeiro parágrafo */
+  font-size: 1.1rem;
+  line-height: 1.6;
 `,Oh="33kjyrm5qfndwgptmtaihjr1malb7jvn6xo4evio",Kw=()=>{const[e,t]=R.useState([]),n=kp();R.useEffect(()=>{(async()=>{try{const a=await ee.get("https://api.rss2json.com/v1/api.json",{params:{rss_url:"https://medium.com/feed/@brunomachadoricardosilva",api_key:Oh}});if(console.log("API Response:",a.data.items),a.data.items){const u=a.data.items.map(c=>({...c,thumbnail:r(c.content)}));console.log("Mapped Items:",u),t(u)}}catch(a){console.error("Error fetching feed:",a)}})()},[]);const r=s=>{const u=new DOMParser().parseFromString(s,"text/html").querySelector("img");return u?u.src:null},o=s=>{const u=new DOMParser().parseFromString(s,"text/html").querySelectorAll("p");return u.length>0?u[0].textContent:null},i=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g,"-").toLowerCase(),l=s=>{const a=i(s.title);n(`/medium/${encodeURIComponent(a)}`,{state:{post:s}})};return x.jsxs(Uw,{children:[x.jsx(Rh,{}),x.jsxs(Vw,{children:[x.jsx(tf,{children:"MEDIUM"}),x.jsx(uo,{})]}),x.jsx(Hw,{children:e.map((s,a)=>x.jsxs(Ww,{onClick:()=>l(s),children:[x.jsx(tf,{children:s.title.toUpperCase()}),x.jsx(jh,{children:s.categories.map((u,c)=>x.jsx("span",{children:u},c))}),x.jsx(Nh,{children:s.author}),x.jsx(Th,{children:new Date(s.pubDate).toLocaleDateString()}),s.thumbnail&&x.jsx(Bw,{src:s.thumbnail,alt:s.title}),s.content&&x.jsx(Qw,{children:o(s.content)})]},a))})]})},Gw=()=>{const[e,t]=R.useState(null),[n,r]=R.useState(null),o=so(),{id:i}=Ag();R.useEffect(()=>{const a=async u=>{try{const c=await ee.get("https://api.rss2json.com/v1/api.json",{params:{rss_url:"https://medium.com/feed/@brunomachadoricardosilva",api_key:Oh}});if(console.log("PUBLICAÇÕES"),console.log(c.data.items),c.data.items){const f=c.data.items.find(m=>{const v=k=>k.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g,"-").toLowerCase(),g=v(m.title),y=v(u);return g===y});f&&t(f)}}catch(c){console.error("Error fetching post:",c)}};o.state&&o.state.post?t(o.state.post):i&&a(i)},[i,o.state]);const l=a=>{r(a)},s=()=>{r(null)};return e?x.jsxs(Dw,{children:[x.jsx(Rh,{}),x.jsx($w,{children:e.title.toUpperCase()}),x.jsx(jh,{children:e.categories.map((a,u)=>x.jsx("span",{children:a},u))}),x.jsxs(Mw,{children:[x.jsxs(Nh,{children:["Por ",e.author]}),x.jsxs(Th,{children:["publicado em ",new Date(e.pubDate).toLocaleDateString()]})]}),x.jsx("div",{dangerouslySetInnerHTML:{__html:e.content},onClick:a=>{a.target.tagName==="IMG"&&l(a.target.src)}}),n&&x.jsxs(x.Fragment,{children:[x.jsx("div",{className:"overlay",onClick:s}),x.jsx("img",{className:"expanded-image",src:n,alt:"Imagem Expandida",onClick:s})]})]}):null};function Yw(){return x.jsxs(n1,{basename:"/bugbuster",children:[x.jsx(py,{}),x.jsxs(qg,{children:[x.jsx(tn,{path:"/",element:x.jsx(sv,{})}),x.jsx(tn,{path:"/medium",element:x.jsx(Kw,{})}),x.jsx(tn,{path:"/medium/:id",element:x.jsx(Gw,{})}),x.jsx(tn,{path:"/ourservices",element:x.jsx(rh,{})}),x.jsx(tn,{path:"/mentors",element:x.jsx(nh,{})}),x.jsx(tn,{path:"/contact",element:x.jsx(th,{})})]}),x.jsx(cv,{})]})}Gl.createRoot(document.getElementById("root")).render(x.jsx(qe.StrictMode,{children:x.jsx(Yw,{})}));
