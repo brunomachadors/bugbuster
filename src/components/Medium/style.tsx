@@ -184,9 +184,9 @@ export const Categories = styled.div`
   span {
     background-color: #c40202;
     border-radius: 8px;
-    padding: 10px 16px;
+    padding: 6px 12px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 

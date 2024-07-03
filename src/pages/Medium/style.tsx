@@ -51,21 +51,21 @@ export const PostContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1vh;
-  width: calc(100% / 3 - 30px); /* Ajustando para uma largura um pouco maior */
+  width: calc(100% / 3 - 30px);
   margin: 10px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   border: 1px dashed black;
-  text-align: center; /* Centraliza o texto dentro do PostContainer */
+  text-align: center;
 
   @media (max-width: 1200px) {
-    width: calc(100% / 2 - 30px); /* 2 colunas em telas menores que 1200px */
+    width: calc(100% / 2 - 30px);
   }
 
   @media (max-width: 768px) {
-    width: calc(100% - 30px); /* 1 coluna em telas menores que 768px */
+    width: calc(100% - 30px);
   }
 `;
 
@@ -75,6 +75,6 @@ export const FirstParagraph = styled.p`
   margin: 0 auto;
   word-wrap: normal;
   padding-bottom: 1vh;
-  font-size: 1.1rem; /* Tamanho da fonte do primeiro parágrafo */
-  line-height: 1.6; /* Espaçamento entre linhas do primeiro parágrafo */
+  font-size: 1.1rem;
+  line-height: 1.6;
 `;
