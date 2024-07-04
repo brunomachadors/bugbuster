@@ -1,32 +1,25 @@
-#BUG BUSTER
+# BUG BUSTER
 
 Este é um site de mentoria de testes.
 
+## Medium
 
+Nessa seção, são publicados textos referentes ao feed do brunomachadoricardosilva, que são automaticamente ajustados para o site.
 
-## MEDIUM
-Nessa sessão são publicados textos referentes ao feeed do brunomachadoricardosilva que são automaticamente ajustados para o site.
+## Serviços
 
+Aqui está a lista de serviços disponíveis.
 
-##SERVIÇOS
+## Quem Somos
 
-Aqui estão a lista de serviços que estão disponíveis
+Lista de mentores disponíveis para contratação.
 
+## Contato
 
-#QUEM SOMOS
-
-Lista de mentores disponíveis para contratação
-
-
-#CONTATO
-
-Contatos da equipe bug buster
-
-
+Contatos da equipe Bug Buster.
 
 ### Como executar o projeto
 
-
-´npm install
+```bash
+npm install
 npm run dev
-´
