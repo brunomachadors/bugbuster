@@ -74,7 +74,7 @@ Error generating stack: `+i.message+`
   position: fixed;
   top: 0;
   left: 0;
-
+  background-color: ${e=>e.backgroundColor||"#fff"};
   z-index: 1000;
 
   @media (min-width: 769px) {
