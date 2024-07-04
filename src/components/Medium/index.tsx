@@ -17,7 +17,7 @@ const MediumPostPage: React.FC = () => {
   const [post, setPost] = useState<MediumPost | null>(null);
   const [expandedImage, setExpandedImage] = useState<string | null>(null);
   const location = useLocation();
-  const { id } = useParams<{ id: string }>(); // Obter o ID da URL
+  const { id } = useParams<{ id: string }>();
 
   useEffect(() => {
     const fetchPostById = async (postId: string) => {

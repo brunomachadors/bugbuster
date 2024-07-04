@@ -46,8 +46,8 @@ const IntroDescription = styled.p<IntroDescriptionProps>`
   font-size: x-large;
   text-align: center;
   width: 100%;
-  background-color: ${(props) => props.backgroundColor || 'transparent'};
-  color: ${(props) => props.color || 'black'};
+  background-color: #000000b8;
+  color: ${(props) => props.color || 'white'};
   border-radius: 20px;
   padding: 20px;
 `;
@@ -59,15 +59,10 @@ const HomeIntroSection = () => {
         <IntroTitle>BUG BUSTER</IntroTitle>
       </TitleContainer>
       <Banner></Banner>
-      <IntroDescription backgroundColor="#000000c2" color="white">
+      <IntroDescription color="white">
         Somos uma página especializada em serviços de mentoria para
         profissionais em transição de carreira ou buscando aprimoramento na área
         de teste de software.
-      </IntroDescription>
-
-      <IntroDescription>
-        Nosso objetivo é fornecer orientação personalizada para ajudá-lo a
-        alcançar seus objetivos profissionais.
       </IntroDescription>
     </IntroContainer>
   );

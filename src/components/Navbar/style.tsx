@@ -5,7 +5,7 @@ interface NavLinksProps {
   $isOpen: boolean;
 }
 
-export const NavbarContainer = styled.nav<{ backgroundColor?: string }>`
+export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@ export const NavbarContainer = styled.nav<{ backgroundColor?: string }>`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: ${(props) => props.backgroundColor || '#fff'};
+
   z-index: 1000;
 
   @media (min-width: 769px) {
