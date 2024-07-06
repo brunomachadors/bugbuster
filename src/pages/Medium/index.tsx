@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { useNavigate } from 'react-router-dom';
-import {
-  Author,
-  Categories,
-  GlobalStyle,
-  PubDate,
-} from '../../components/Medium/style';
+import { Author, Categories, PubDate } from '../../components/Medium/style';
 import { MediumPost } from '../../Types/IPost';
 import {
   MediumFeedContainer,
@@ -86,7 +81,6 @@ const MediumFeed: React.FC = () => {
 
   return (
     <MediumFeedContainer>
-      <GlobalStyle />
       <TitleContainer>
         <Title>MEDIUM</Title>
         <Logo></Logo>

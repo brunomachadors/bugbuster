@@ -8,7 +8,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    box-sizing: border-box;
     max-width: 100%;
   }
 
@@ -76,7 +75,7 @@ export const ContentContainer = styled.div`
   }
 
   img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;

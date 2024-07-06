@@ -6,7 +6,7 @@ import {
   MenuToggle,
   MenuIcon,
 } from './style';
-import Logo from '../Logo/Logo';
+
 import useWindowWidth from '../../hooks/useWindowWidth';
 
 const Navbar: React.FC = () => {
@@ -32,7 +32,6 @@ const Navbar: React.FC = () => {
     <NavbarContainer>
       <MenuToggle onClick={toggleMenu}>
         <MenuIcon className="material-icons">menu</MenuIcon>
-        <Logo />
       </MenuToggle>
       <NavLinks $isOpen={isOpen}>
         <StyledLink to="/" onClick={toggleMenu}>

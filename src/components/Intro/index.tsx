@@ -41,15 +41,18 @@ const IntroTitle = styled.h1`
   margin-bottom: 1rem;
 `;
 
-// Use a interface no componente estilizado
 const IntroDescription = styled.p<IntroDescriptionProps>`
   font-size: x-large;
   text-align: center;
-  width: 100%;
+  width: 97%;
   background-color: #000000b8;
   color: ${(props) => props.color || 'white'};
   border-radius: 20px;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const HomeIntroSection = () => {
@@ -60,9 +63,8 @@ const HomeIntroSection = () => {
       </TitleContainer>
       <Banner></Banner>
       <IntroDescription color="white">
-        Somos uma página especializada em serviços de mentoria para
-        profissionais em transição de carreira ou buscando aprimoramento na área
-        de teste de software.
+        Mentoria para profissionais em transição de carreira ou buscando
+        aprimoramento na área de teste de software
       </IntroDescription>
     </IntroContainer>
   );
