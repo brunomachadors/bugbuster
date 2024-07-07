@@ -81,6 +81,10 @@ export const ContentContainer = styled.div`
     margin: 0 auto;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   h1,
@@ -153,7 +157,8 @@ export const ContentContainer = styled.div`
     padding: 1%;
 
     @media (max-width: 768px) {
-      max-width: 100%;
+      max-width: 80%;
+      font-size: small;
     }
   }
 `;

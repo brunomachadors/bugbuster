@@ -12,6 +12,7 @@ export default function Banner() {
         'https://res.cloudinary.com/dtglidvcw/image/upload/e_improve:outdoor/c_crop,h_0.70,w_1.00/BUGBUSTER/ldz2movmit4domxmp230.jpg'
       }
       alt="Bug Buster Logo"
+      id="bannerImage"
     />
   );
 }

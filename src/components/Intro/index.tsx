@@ -57,12 +57,12 @@ const IntroDescription = styled.p<IntroDescriptionProps>`
 
 const HomeIntroSection = () => {
   return (
-    <IntroContainer>
-      <TitleContainer>
-        <IntroTitle>BUG BUSTER</IntroTitle>
+    <IntroContainer id="introContainer">
+      <TitleContainer id="titleContainer">
+        <IntroTitle id="introTitle">BUG BUSTER</IntroTitle>
       </TitleContainer>
       <Banner></Banner>
-      <IntroDescription color="white">
+      <IntroDescription color="white" id="introDescription">
         Mentoria para profissionais em transição de carreira ou buscando
         aprimoramento na área de teste de software
       </IntroDescription>

@@ -12,7 +12,11 @@ export const MaterialIcon: React.FC<MaterialIconProps> = ({
   };
 
   return (
-    <span className="material-icons" style={iconStyle}>
+    <span
+      className="material-icons"
+      style={iconStyle}
+      id={`${iconName}MaterialIcon`}
+    >
       {iconName}
     </span>
   );

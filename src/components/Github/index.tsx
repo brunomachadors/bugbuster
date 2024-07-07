@@ -3,13 +3,14 @@ import gitImage from '../../assets/github.svg';
 
 function Github() {
   return (
-    <GithubContainer>
+    <GithubContainer id="gitHubContainer">
       <GithubLink
         href="https://github.com/brunomachadors"
         target="_blank"
         rel="noopener noreferrer"
+        id="gitHubLink"
       >
-        <GithubIcon src={gitImage} alt="Github Icon" />
+        <GithubIcon src={gitImage} alt="Github Icon" id="gitHubIcon" />
         brunomachadors
       </GithubLink>
     </GithubContainer>

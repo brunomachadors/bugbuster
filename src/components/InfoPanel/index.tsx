@@ -15,13 +15,15 @@ interface InfoPanelProps {
 const InfoPanel: React.FC<InfoPanelProps> = ({ service }) => {
   return (
     <BlockContainer id="blockContainer1">
-      <TitleContainer>
+      <TitleContainer id="titleContainerInfoPanel">
         <MaterialIcon iconName={service.icon} size="5vh" />
-        <Title>{service.title}</Title>
+        <Title id="titleInfoPanel">{service.title}</Title>
       </TitleContainer>
 
-      <DescriptionContainer>
-        <Description>{service.description}</Description>
+      <DescriptionContainer id="descriptionContainerInfoPanel">
+        <Description id="descriptionInfoPanel">
+          {service.description}
+        </Description>
       </DescriptionContainer>
     </BlockContainer>
   );

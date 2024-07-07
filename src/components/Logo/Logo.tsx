@@ -42,8 +42,8 @@ const BugText = styled.div`
 const Logo = () => {
   return (
     <>
-      <GhostlyLogo src={logo} alt="Bug Buster Logo" />
-      <BugText>AHHHH UM BUG!</BugText>
+      <GhostlyLogo src={logo} alt="Bug Buster Logo" id="logoBugBuster" />
+      <BugText id="logoBugBusterText">AHHHH UM BUG!</BugText>
     </>
   );
 };

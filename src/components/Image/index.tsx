@@ -21,8 +21,8 @@ const Image = styled.img`
 
 const PostImage: React.FC<PostImageProps> = ({ imageUrl }) => {
   return (
-    <ImageContainer>
-      <Image src={imageUrl} alt="Imagem relacionada à publicação" />
+    <ImageContainer id="imageContainer">
+      <Image src={imageUrl} alt="Imagem relacionada à publicação" id="image" />
     </ImageContainer>
   );
 };
