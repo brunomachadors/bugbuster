@@ -635,7 +635,7 @@ Error generating stack: `+i.message+`
 
   p {
     text-align: justify;
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
     word-wrap: normal;
     padding-bottom: 2vh;
@@ -652,7 +652,7 @@ Error generating stack: `+i.message+`
     padding-left: 20px;
     margin: 0 auto;
     margin-bottom: 20px;
-    max-width: 90%;
+    max-width: 70%;
     text-align: left;
   }
 
@@ -665,7 +665,7 @@ Error generating stack: `+i.message+`
   }
 
   blockquote {
-    max-width: 90%;
+    max-width: 70%;
     margin: 2em auto;
     padding: 1em;
     background: #f9f9f9;
