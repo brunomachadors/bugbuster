@@ -13,15 +13,18 @@ interface InfoPanelProps {
 }
 
 const InfoPanel: React.FC<InfoPanelProps> = ({ service }) => {
+  // Remove todos os espaços do título do serviço
+  const uniqueId = service.title.replace(/\s+/g, '');
+
   return (
-    <BlockContainer id="blockContainer1">
-      <TitleContainer id="titleContainerInfoPanel">
+    <BlockContainer id={`blockContainer-${uniqueId}`}>
+      <TitleContainer id={`titleContainer-${uniqueId}`}>
         <MaterialIcon iconName={service.icon} size="5vh" />
-        <Title id="titleInfoPanel">{service.title}</Title>
+        <Title id={`title-${uniqueId}`}>{service.title}</Title>
       </TitleContainer>
 
-      <DescriptionContainer id="descriptionContainerInfoPanel">
-        <Description id="descriptionInfoPanel">
+      <DescriptionContainer id={`descriptionContainer-${uniqueId}`}>
+        <Description id={`description-${uniqueId}`}>
           {service.description}
         </Description>
       </DescriptionContainer>

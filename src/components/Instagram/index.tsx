@@ -12,6 +12,7 @@ function Instagram() {
         <InstagramIcon
           src="https://img.icons8.com/?id=RhYNENh5cxlS&format=png"
           id="instagramIcon"
+          alt="instagramIcon"
         ></InstagramIcon>
         brunomachadors
       </InstagramLink>

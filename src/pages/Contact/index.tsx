@@ -2,7 +2,7 @@ import Email from '../../components/Email';
 import Github from '../../components/Github';
 import Instagram from '../../components/Instagram';
 import Linkedin from '../../components/Linkedin';
-import Logo from '../../components/Logo/Logo';
+
 import {
   ContactContainer,
   ContactInfoContainer,
@@ -14,7 +14,6 @@ function Contact() {
   return (
     <ContactContainer>
       <TitleContainer>
-        <Logo></Logo>
         <Title>CONTATOS</Title>
       </TitleContainer>
       <ContactInfoContainer>

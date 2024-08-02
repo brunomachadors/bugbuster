@@ -105,6 +105,9 @@ export const ContentContainer = styled.div`
     padding-bottom: 2vh;
     font-size: large;
     line-height: 1.6;
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
   }
 
   figcaption {
@@ -118,6 +121,9 @@ export const ContentContainer = styled.div`
     margin-bottom: 20px;
     max-width: 70%;
     text-align: left;
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
   }
 
   li {
@@ -136,6 +142,10 @@ export const ContentContainer = styled.div`
     border-left: 10px solid #ccc;
     font-style: italic;
     color: #666;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
   }
 
   blockquote em {
