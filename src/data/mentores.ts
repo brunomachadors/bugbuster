@@ -13,7 +13,7 @@ export const mentors = [
     ],
     frameworks: ['Cypress', 'Playwright', 'Selenium', 'Postman', 'Newman'],
     imageUrl:
-      'https://media.licdn.com/dms/image/C4D03AQFnMRVhdXJDQg/profile-displayphoto-shrink_800_800/0/1622465790874?e=1722470400&v=beta&t=-7X6qPATVHjhKqE54z_c2001K8lKPecGK8u4Yg8oNUc',
+      'https://res.cloudinary.com/dtglidvcw/image/upload/v1722847009/BUGBUSTER/profileBruno.jpg',
 
     company: {
       name: 'Mindera',
