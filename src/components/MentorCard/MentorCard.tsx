@@ -1,5 +1,3 @@
-// src/components/MentorCard.tsx
-
 import React from 'react';
 import {
   MentorContainer,
@@ -52,17 +50,20 @@ const MentorCard: React.FC<MentorCardProps> = ({ mentor }) => {
               <ListTitle id={generateId('listTitleLanguages', mentor.name)}>
                 Linguagens:
               </ListTitle>
-              {mentor.languages.map((language, index) => (
-                <ListItem
-                  key={index}
-                  id={generateId(
-                    'listItemLanguage',
-                    `${mentor.name}-${language}`
-                  )}
-                >
-                  • {language}
-                </ListItem>
-              ))}
+              <ul>
+                {mentor.languages.map((language, index) => (
+                  <ListItem
+                    as="li"
+                    key={index}
+                    id={generateId(
+                      'listItemLanguage',
+                      `${mentor.name}-${language}`
+                    )}
+                  >
+                    {language}
+                  </ListItem>
+                ))}
+              </ul>
             </ListContainer>
           </MentorBlockContainer>
 
@@ -73,14 +74,17 @@ const MentorCard: React.FC<MentorCardProps> = ({ mentor }) => {
               <ListTitle id={generateId('listTitleSkills', mentor.name)}>
                 Skills:
               </ListTitle>
-              {mentor.skills.map((skill, index) => (
-                <ListItem
-                  key={index}
-                  id={generateId('listItemSkill', `${mentor.name}-${skill}`)}
-                >
-                  • {skill}
-                </ListItem>
-              ))}
+              <ul>
+                {mentor.skills.map((skill, index) => (
+                  <ListItem
+                    as="li"
+                    key={index}
+                    id={generateId('listItemSkill', `${mentor.name}-${skill}`)}
+                  >
+                    {skill}
+                  </ListItem>
+                ))}
+              </ul>
             </ListContainer>
           </MentorBlockContainer>
 
@@ -93,17 +97,20 @@ const MentorCard: React.FC<MentorCardProps> = ({ mentor }) => {
               <ListTitle id={generateId('listTitleFrameworks', mentor.name)}>
                 Frameworks:
               </ListTitle>
-              {mentor.frameworks.map((framework, index) => (
-                <ListItem
-                  key={index}
-                  id={generateId(
-                    'listItemFramework',
-                    `${mentor.name}-${framework}`
-                  )}
-                >
-                  • {framework}
-                </ListItem>
-              ))}
+              <ul>
+                {mentor.frameworks.map((framework, index) => (
+                  <ListItem
+                    as="li"
+                    key={index}
+                    id={generateId(
+                      'listItemFramework',
+                      `${mentor.name}-${framework}`
+                    )}
+                  >
+                    {framework}
+                  </ListItem>
+                ))}
+              </ul>
             </ListContainer>
           </MentorBlockContainer>
         </ListsContainer>
