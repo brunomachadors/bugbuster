@@ -282,10 +282,15 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   align-items: center;
-`,Hl=O.p`
+`,Hl=O.h4`
   font-weight: bold;
   margin-bottom: 1px;
   font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 `,Vl=O.li`
   font-size: medium;
   color: #333;
