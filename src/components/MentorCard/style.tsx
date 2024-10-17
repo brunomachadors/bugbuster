@@ -45,10 +45,15 @@ export const ListContainer = styled.ul`
   align-items: center;
 `;
 
-export const ListTitle = styled.p`
+export const ListTitle = styled.h4`
   font-weight: bold;
   margin-bottom: 1px;
   font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 `;
 
 export const ListItem = styled.li`
