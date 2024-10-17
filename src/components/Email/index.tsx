@@ -1,14 +1,16 @@
-import { MaterialIcon } from '../Icons/style';
-import { EmailContainer, EmailLink } from './style';
+import { SocialLinkContainer, SocialIcon, SocialLink } from '../Social/style';
 
 function Email() {
   return (
-    <EmailContainer id="emailContainer">
-      <EmailLink href="mailto:brunomachadors@gmail.com" id="emailLink">
-        <MaterialIcon iconName="mail"></MaterialIcon>
-        brunomachadors@gmail.com
-      </EmailLink>
-    </EmailContainer>
+    <SocialLinkContainer>
+      <SocialLink href="mailto:brunomachadors@gmail.com" id="emailLink">
+        <SocialIcon
+          src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+          alt="Email Icon"
+        />
+        Email
+      </SocialLink>
+    </SocialLinkContainer>
   );
 }
 

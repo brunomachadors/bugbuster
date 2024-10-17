@@ -2,34 +2,36 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   display: flex;
-  justify-content: ce;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   margin-top: 2vh;
   gap: 3vh;
 
   @media (min-width: 768px) {
-    width: 50%;
+    width: 90%;
     margin: auto;
     margin-top: 2vh;
   }
 
   @media (min-width: 1200px) {
-    width: 40%;
+    width: 60%;
   }
 `;
 
 export const ContactInfoContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 2vh;
-  border: 3px dashed black;
+  border-bottom: 3px dashed #00000073;
+  border-top: 3px dashed #00000073;
   padding: 3vw;
-  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10%;
   font-size: 5vw;
 
   @media (min-width: 768px) {
@@ -48,7 +50,8 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: xx-large;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
+  color: #333;
 `;

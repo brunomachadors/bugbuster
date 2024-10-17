@@ -1,19 +1,20 @@
-import { GithubContainer, GithubIcon, GithubLink } from './style';
-import gitImage from '../../assets/github.svg';
+import { SocialLinkContainer, SocialIcon, SocialLink } from '../Social/style';
 
 function Github() {
   return (
-    <GithubContainer id="gitHubContainer">
-      <GithubLink
+    <SocialLinkContainer>
+      <SocialLink
         href="https://github.com/brunomachadors"
         target="_blank"
         rel="noopener noreferrer"
-        id="gitHubLink"
       >
-        <GithubIcon src={gitImage} alt="Github Icon" id="gitHubIcon" />
-        brunomachadors
-      </GithubLink>
-    </GithubContainer>
+        <SocialIcon
+          src="https://img.icons8.com/?id=12599&format=png"
+          alt="GitHub Icon"
+        />
+        Github
+      </SocialLink>
+    </SocialLinkContainer>
   );
 }
 

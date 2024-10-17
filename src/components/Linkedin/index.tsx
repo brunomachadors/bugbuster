@@ -1,20 +1,20 @@
-import { LinkedinContainer, LinkedinIcon, LinkedinLink } from './style';
+import { SocialLinkContainer, SocialIcon, SocialLink } from '../Social/style';
 
 function Linkedin() {
   return (
-    <LinkedinContainer>
-      <LinkedinLink
+    <SocialLinkContainer>
+      <SocialLink
         href="https://www.linkedin.com/in/brunomrs/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LinkedinIcon
+        <SocialIcon
           src="https://img.icons8.com/?id=8808&format=png"
           alt="LinkedIn Icon"
         />
-        brunomrs
-      </LinkedinLink>
-    </LinkedinContainer>
+        Linkedin
+      </SocialLink>
+    </SocialLinkContainer>
   );
 }
 

@@ -6,7 +6,7 @@ export const OurServicesContainer = styled.div`
   align-items: center;
   width: 100%;
   flex-direction: column;
-  padding: 5vh 0; /* Adicionar padding em vez de height fixa */
+  padding: 5vh 0;
   gap: 3vh;
 
   @media (max-width: 768px) {

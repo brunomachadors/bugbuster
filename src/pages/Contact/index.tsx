@@ -2,6 +2,7 @@ import Email from '../../components/Email';
 import Github from '../../components/Github';
 import Instagram from '../../components/Instagram';
 import Linkedin from '../../components/Linkedin';
+import MediumContact from '../../components/MediumContact';
 
 import {
   ContactContainer,
@@ -17,10 +18,11 @@ function Contact() {
         <Title>CONTATOS</Title>
       </TitleContainer>
       <ContactInfoContainer>
-        <Email></Email>
-        <Instagram></Instagram>
-        <Github></Github>
-        <Linkedin></Linkedin>
+        <Instagram />
+        <Linkedin />
+        <MediumContact />
+        <Github />
+        <Email />
       </ContactInfoContainer>
     </ContactContainer>
   );
