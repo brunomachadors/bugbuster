@@ -37,30 +37,27 @@ export const MentorDescription = styled.p`
   color: #666;
 `;
 
-export const ListContainer = styled.ul`
-  list-style-type: none;
+export const ListContainer = styled.div`
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 
 export const ListTitle = styled.h4`
   font-weight: bold;
-  margin-bottom: 1px;
+  margin-bottom: 0.5rem;
   font-size: larger;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   text-align: center;
+  width: 100%;
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.div`
   font-size: medium;
   color: #333;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: 100%;
 `;
 
 export const MentorBlockContainer = styled.div`
@@ -73,6 +70,9 @@ export const MentorBlockContainer = styled.div`
 export const ListsContainer = styled.div`
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -83,6 +83,7 @@ export const CurrentCompany = styled.p`
   font-size: 1.2rem;
   color: #000000;
   font-weight: bold;
+  text-align: center;
 `;
 
 export const CompanyImage = styled.img`

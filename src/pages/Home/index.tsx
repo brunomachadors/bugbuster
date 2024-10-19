@@ -1,8 +1,6 @@
+import KnowMoreButton from '../../components/Button';
 import HomeIntroSection from '../../components/Intro';
-
-import Contact from '../Contact';
-import Mentors from '../Mentors';
-import OurServices from '../OurServices';
+import Testimonials from '../Testimonials';
 
 import { HomeContainer } from './style';
 
@@ -10,10 +8,8 @@ const Home = () => {
   return (
     <HomeContainer id="homeContainer">
       <HomeIntroSection></HomeIntroSection>
-      <OurServices></OurServices>
-      <Mentors></Mentors>
-
-      <Contact></Contact>
+      <Testimonials />
+      <KnowMoreButton></KnowMoreButton>
     </HomeContainer>
   );
 };
