@@ -90,7 +90,7 @@ export const TestimonialText = styled.p`
 export const TestimonialAuthor = styled.p`
   font-size: 1em;
   font-style: italic;
-  color: #888;
+  color: #4a4a4a;
 
   @media (max-width: 768px) {
     font-size: 0.9em;

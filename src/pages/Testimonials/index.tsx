@@ -23,11 +23,11 @@ const testimonialsData = [
   {
     title: 'Essencial para minha visão em QA',
     description:
-      'Essencial para minha visão em QA. Com uma didática clara e exemplos práticos, Bruno simplificou conceitos complexos e me ajudou a aplicar boas práticas, aumentando minha confiança. Ele também personalizou a mentoria de acordo com minhas necessidades, o que fez toda a diferença no meu aprendizado.',
+      'Com uma didática clara e exemplos práticos, Bruno simplificou conceitos complexos e me ajudou a aplicar boas práticas, aumentando minha confiança. Ele também personalizou a mentoria de acordo com minhas necessidades, o que fez toda a diferença no meu aprendizado.',
     author:
       'Raquel Gomes - Gerente de loja de telefonia que migrou para a área de testes',
     image:
-      'https://media.licdn.com/dms/image/v2/D4D35AQG6KvSdHN_27w/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1664226196119?e=1729897200&v=beta&t=B_evO9qDeH1arvLn1Ymn3gHjeJGRqBQW9QjLH6-MmEg',
+      'https://res.cloudinary.com/dtglidvcw/image/upload/v1729446850/mypr5cj8jmyp2heemar5.jpg',
   },
 
   {
