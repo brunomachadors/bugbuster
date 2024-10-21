@@ -60,6 +60,13 @@ export const ArrowButton = styled.button`
     width: 120px;
     height: 120px;
   }
+
+  @media (max-width: 768px) {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
 `;
 
 export const PaginationContainer = styled.div`
@@ -71,11 +78,12 @@ export const PaginationContainer = styled.div`
 
 export const PaginationButton = styled.button`
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 0 10px 20px;
   border: 1px solid black;
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
+  color: black;
   background-color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 

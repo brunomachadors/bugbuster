@@ -117,6 +117,21 @@ export const ModalDescription = styled.p`
   color: white;
   margin-top: 15px;
   font-size: 16px;
+
+  @media (max-width: 1024px) {
+    z-index: 3000;
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    margin-top: 8px;
+  }
 `;
 
 export const ModalEventTitle = styled.h3`
