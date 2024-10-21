@@ -14,7 +14,6 @@ const IntroContainer = styled.div`
   max-width: 80vw;
   text-align: center;
   line-height: 1.5;
-  border-bottom: 1px solid black;
 
   @media (min-width: 768px) {
     font-size: 1.25em;
