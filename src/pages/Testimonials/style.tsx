@@ -5,9 +5,10 @@ export const TestimonialsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5vh;
-  width: 100%;
-  gap: 4vh;
+  margin-top: 3vh;
+  padding-bottom: 1vh;
+  width: 50%;
+  border-top: 1px solid black;
 
   @media (max-width: 768px) {
     padding-bottom: 5vh;
@@ -44,11 +45,12 @@ export const TestimonialBlock = styled.div<{ reverse: boolean }>`
   border: 2px dashed #00000073;
   border-radius: 10px;
   padding: 1rem;
-  width: 90%; /* Ajustado para largura de 90% */
+  width: 90%;
   max-width: 800px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2vh;
 
   &:hover {
     background: #fff;
